@@ -1,0 +1,4 @@
+Make a page to get answers 
+Store answers inside database
+Check if answers match with correct answers 
+    If true, update score 
