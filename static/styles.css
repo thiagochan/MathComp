@@ -199,6 +199,12 @@ nav .fa{
     }
 }
 
+@media(max-width: 960px){
+    #img01{
+        display: none;
+    }
+}
+
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
@@ -231,5 +237,4 @@ nav .fa{
     .missao, .diferencial {
         margin: 30px;
     }
-
 }
