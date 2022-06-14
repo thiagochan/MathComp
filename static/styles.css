@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Jost:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 
 *{
@@ -17,6 +16,7 @@
     width: 100%;
     background-position: center;
     background-size: cover;
+    z-index: 9;
 }
 
 .navbar a {
@@ -61,20 +61,6 @@
     padding: 8px 12px;
 }
 
-.nav-links ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background-color: rgb(16, 100, 100);
-    display: block;
-    margin: auto;
-    transition: 0.3s;
-}
-
-.nav-links ul li:hover::after{
-    width: 100%;
-}
-
 .text-box{
     display: flex;
     justify-content: space-between;
@@ -86,8 +72,24 @@
     border-bottom-right-radius: 250px;
 }
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-40px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
 #img01{
     max-width: 550px;
+    overflow: hidden;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
 }
 
 .boxItem{
@@ -165,6 +167,8 @@ nav .fa{
 
 .contImg{
     max-width: 350px;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
 }
 
 .txtDiv{
@@ -175,7 +179,7 @@ nav .fa{
     margin-top: 200px;
     padding: 4%;
     height: 150px;
-    background-image: linear-gradient(to bottom right, #FD6585, #0D25B9);
+    background-image: linear-gradient(to bottom right, #0CB8AE, #0D25B9);
     font-family: 'Jost', sans-serif;
     font-size: 24px;
 }
@@ -229,62 +233,3 @@ nav .fa{
     }
 
 }
-
-/* CSS das entradas do formulário */
-
-.formulario {
-    width: 400px;
-    padding: 30px;
-    border: 1px solid #ccc;
-  }
-  .formulario p {
-    width: 100%;
-    font-size: 1.5em;
-  }
-  .field {
-    width: 100%;
-    margin: 15px 0;
-  }
-  .field label,
-  .field span {
-    padding-left: 10px;
-    font-size: 1.1em;
-    display: block;
-    width: 100%;
-  }
-  .radiobox label {
-    width: auto;
-    display: inline-block;
-  }
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding-left: 10px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 15px;
-    border: 1px solid #ccc;
-    outline: none;
-  }
-  input#nao {
-    margin-left: 30px;
-  }
-  textarea {
-    line-height: 20px;
-    padding: 10px;
-    height: 90px;
-    resize: none;
-  }
-  input[type="submit"] {
-    display: block;
-    background-color: #ccc;
-    height: 35px;
-    border: none;
-    outline: 0;
-    cursor: pointer;
-    width: 100px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 15px;
-  }
