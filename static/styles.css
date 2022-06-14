@@ -214,18 +214,18 @@ nav .fa{
     }
     .nav-links{
         position: absolute;
-        background: #04504c;
+        background: #F9F6EE;
         height: 100vh;
         width: 200px;
         top: 0;
         right: 0px;
-        text-align: left;
+        text-align: right;
         z-index: 2;
         transition: 1s;
     }
     nav .fa{
         display: block;
-        color: #fff;
+        color: #000;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
