@@ -76,12 +76,18 @@
 }
 
 .text-box{
+    display: flex;
+    justify-content: space-between;
     margin: 20px;
     padding: 25px;
     height: 450px;
     background-image: linear-gradient(to bottom right, #0CB8AE, #CC63CF);
     border-radius: 67px;
     border-bottom-right-radius: 250px;
+}
+
+#img01{
+    max-width: 550px;
 }
 
 .boxItem{
@@ -166,6 +172,7 @@ nav .fa{
 }
 
 .footer{
+    margin-top: 200px;
     padding: 4%;
     height: 150px;
     background-image: linear-gradient(to bottom right, #FD6585, #0D25B9);
@@ -181,6 +188,10 @@ nav .fa{
 @media(max-width: 1279px){
     .missao, .diferencial {
         margin: 30px;
+    }
+
+    #img01{
+        max-width: 400px;
     }
 }
 
