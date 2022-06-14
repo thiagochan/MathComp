@@ -5,41 +5,72 @@
         <meta name = "viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/static/styles.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>marco pinto</title>
+        <title>Home</title>
     </head>
     <body>
-        <section class = "header">
+        <header class = "header">
             <nav class="navbar">
-                <a href="#">Math Comp.</a>
-                <div class = "nav-links" id = "navLinks">
-                    <ul class = "nav-links">
+                    <ul class="nav-links">
                         <i class="fa fa-times" onClick = "hideMenu()"></i>
-                        <li><a href="/">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="{{url_for('event')}}">Evento</a></li>
-                        <li><a href="/">Inscreva-se</a></li>
-                        <li><a href="/">Login</a></li>
+                        <li><a href="#">Inscreva-se</a></li>
                     </ul>
-                </div>
+
+                    <button class="btnLogin btn"><a href="#">Login</a></button>
                 <i class="fa fa-bars" onClick = "showMenu()"></i>
             </nav>
-            <div class="text-box">
-                <h1>Math Comp.</h1>
-                <p>O projeto de extensão [nome] com sede no Instituto Federal do Paraná te convida a participar da competição de matemática MathX com seus amigos!  </p>
-                <a href="#" class="hbtn">Saiba mais!</a>
-            </div>
-        </section>
-        <section class = "course">
-            <div>
-                <h1>O que é Math Comp.?</h1>
-                <p class = "left-aligned">Lorem ipsum is simply dummy text of the printing and typeseeing industry</p>
-                <div class = "row">
-                    <div class = "course-col">
-                    </div>
+        </header>
 
-                </div>
+        <section class="text-box">
+            <h1 class="boxItem">Math Comp.</h1>
+            <p class="boxItem">O projeto de extensão [nome] com sede no Instituto Federal do Paraná te convida a participar da competição de matemática MathX com seus amigos!  </p>
+            <div class="btnDiv boxItem">
+                <button class="saibaBtn btn boxBtn"><a href="#">Saiba mais!</a></button>
+                <button class="incBtn btn boxBtn"><a href="#">Inscreva-se</a></button>
             </div>
         </section>
-    
+
+        <section class="missao">
+            <div class="misImg">
+                <img src="../images/avatar02.png" alt="nossa missão" class="contImg">
+            </div>
+            <div class="txtDiv">
+                <h1 class="contT">Nossa missão</h1>
+                <p class="contP">A nossa missão é incentivar jovens a explorar o mundo de 
+                    competições científicas, estimulando o trabalho em equipe
+                    e a importância da troca de racicínio para resolução de 
+                    problemas!
+                </p>
+                <p class="contP">
+                    Mais texto mais texto mais texto mais texto mais texto mais
+                    texto mais texto mais texto mais texto mais text
+                </p>
+            </div>
+        </section>
+
+        <section class="diferencial">
+            <div class="txtDiv">
+                <h1 class="contT">Nosso diferencial</h1>
+                <p class="contP">
+                    O nosso diferencial é que a competição acontecerá 
+                    totalmente on-line, permitindo que os alunos possam 
+                    trabalhar nas questões direto de casa com seus amigos! 
+                </p>
+                <p class="contP">
+                    Além disso, os resultados são extremamente rápidos, já
+                    que a análise das respostas será automatizada. 
+                </p>
+            </div>
+            <div class="difImg">
+                <img src="../images/avatar03.png" alt="nossa missão" class="contImg">
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <h1>Contate-nos</h1>
+        </footer>
+
         <script>
             var nav = document.getElementById("navLinks");
 

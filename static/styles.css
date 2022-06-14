@@ -1,38 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Jost:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Poppins-Light'
-
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    transition: all 0.7s linear;
 }
 
-a {
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar a {
     font-size: 20px;
-    color: #ffffff;
     text-decoration: none;
+    font-weight: 900;
 }
 
-a:hover {
+.navbar a:hover {
     transition: 1s;
     opacity: 0.7;
 }
 
 .navbar{
     display: flex;
+    flex-direction: row;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    
 }
 
-.nav-links {
-    flex: 1; 
-    text-align: right;
+.btn{
+    padding: 15px;
+    border-radius: 22px;
+    cursor: pointer;
 }
 
-.nav-links ul li{
+.btnLogin{
+    background-color: #fff;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links{
     list-style: none;
-    display: inline-block;
+    display: flex;
+}
+
+.nav-links li{
+    margin: 5px;
     padding: 8px 12px;
-    position: relative;
 }
 
 .nav-links ul li::after{
@@ -49,77 +75,113 @@ a:hover {
     width: 100%;
 }
 
-.header {
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-
-    background: linear-gradient(135deg, #8fbbbb 0%, #CF62D0 100%);
+.text-box{
+    margin: 20px;
+    padding: 25px;
+    height: 450px;
+    background-image: linear-gradient(to bottom right, #0CB8AE, #CC63CF);
+    border-radius: 67px;
+    border-bottom-right-radius: 250px;
 }
 
-.text-box{
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-
+.boxItem{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .text-box h1{
-    font-size: 62px;
+    font-family: 'Jost', sans-serif;
+    font-size: 72px;
+    text-align: left;
+    color: #fff;
 }
 
 .text-box p{
-    margin: 10px 0 14px;
-    font-size: 14px;
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+    width: 550px;
     color: #fff;
 }
 
-.hbtn{
-    display: inline-block;
+.btnDiv{
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+}
+
+.boxBtn{
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.boxBtn a{
+    color: #fff;
     text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 12px 34px;
-    font-size: 14px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
 }
 
-.hbtn:hover{
-    border: 1px solid;
-    background: #f44336;
-    transition: 0.3s;
+.saibaBtn{
+    background-color: #21DD8E;
+    border: none;
 }
+
+.incBtn{
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
 
 nav .fa{
     display: none;
 }
 
-.course {
-    width: 80%;
+.missao, .diferencial {
+    max-width: 1300px;
     margin: auto;
     padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h1 {
+.contT{
     text-align: center;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 600;
 }
 
-.left-aligned{
-    padding-top: 15px;
-    color:#868686;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 100;
+.contP{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 22px;
+}
+
+.contImg{
+    max-width: 350px;
+}
+
+.txtDiv{
+    max-width: 800px;
+}
+
+.footer{
+    padding: 4%;
+    height: 150px;
+    background-image: linear-gradient(to bottom right, #FD6585, #0D25B9);
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+}
+
+.footer h1{
+    color: #fff;
+    font-weight: 600;
+}
+
+@media(max-width: 1279px){
+    .missao, .diferencial {
+        margin: 30px;
+    }
 }
 
 @media(max-width: 700px){
@@ -149,6 +211,10 @@ h1 {
     }
     .nav-links ul{
         padding: 30px;
+    }
+
+    .missao, .diferencial {
+        margin: 30px;
     }
 
 }
