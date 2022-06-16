@@ -8,15 +8,10 @@ Considerando desde o municipal, é uma burocracia muito grande para trazer os al
 
 <strong>Desktop: </strong>
 <br>
-![home](https://user-images.githubusercontent.com/74190963/171970996-da928829-0809-444f-97ba-1878bb2adcf2.png)
-![home-bottom](https://user-images.githubusercontent.com/74190963/171970998-16859447-5554-4307-acb8-8d62fc057540.png)
+![home-layout02](https://user-images.githubusercontent.com/74190963/173974363-e1d285b2-2889-4c0a-bd4a-9bf0a8eb9fb7.png)
+![evento-layout02](https://user-images.githubusercontent.com/74190963/173974368-21a274f7-ff5d-4c69-955f-24ab0d5b91ae.png)
 
 ##
-
-<strong>Mobile: </strong>
-<br>
-![mobile](https://user-images.githubusercontent.com/74190963/171970999-6bab10a4-5b58-43ca-802a-fc3407594c63.png)
-![mobile-hamburger](https://user-images.githubusercontent.com/74190963/171971000-a8fc46cb-4ce0-423e-8d6d-37707e345d87.png)
 
 Pra isso eu uso Flask e Python e SQL
 
