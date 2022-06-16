@@ -9,7 +9,6 @@ Considerando desde o municipal, é uma burocracia muito grande para trazer os al
 <strong>Desktop: </strong>
 <br>
 ![home-layout02](https://user-images.githubusercontent.com/74190963/173974363-e1d285b2-2889-4c0a-bd4a-9bf0a8eb9fb7.png)
-##
 ![evento-layout02](https://user-images.githubusercontent.com/74190963/173974368-21a274f7-ff5d-4c69-955f-24ab0d5b91ae.png)
 
 ##
