@@ -117,7 +117,7 @@
 
 #boxImg02{
     max-width: 550px;
-    animation: expand 6s ease-in-out infinite;
+    animation: expand 9s ease-in-out infinite;
     position: absolute;
     bottom: 0;
 }
