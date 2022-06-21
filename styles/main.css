@@ -224,8 +224,9 @@ nav .fa{
 
 .footer{
     margin-top: 200px;
+    padding-bottom: 20px;
     padding: 4%;
-    height: 150px;
+    height: 200px;
     background-image: linear-gradient(to bottom right, #0CB8AE, #0D25B9);
     font-family: 'Jost', sans-serif;
     font-size: 24px;
@@ -234,6 +235,15 @@ nav .fa{
 .footer h1{
     color: #fff;
     font-weight: 600;
+}
+
+.bi{
+    color: #fff;
+}
+
+.footerComponent{
+    margin-top: 20px;
+    color: #fff;
 }
 
 @media(max-width: 1279px){
