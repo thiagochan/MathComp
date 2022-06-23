@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Jost:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 
 /* Animations */
-@keyframes appears{
+@keyframes show{
     0%{
         translate: 0px 20px;
         opacity: 0;
@@ -236,6 +236,7 @@ nav .fa{
 
 .txtDiv{
     max-width: 800px;
+    animation: show 2.5s ease;
 }
 
 .footer{
