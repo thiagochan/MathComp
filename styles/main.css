@@ -3,6 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Jost:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 
 /* Animations */
+@keyframes appears{
+    0%{
+        translate: 0px 20px;
+        opacity: 0;
+    }
+
+    50%{
+        translate: 0px -5px;
+    }
+
+    100%{
+        translate: 0px 0px;
+        opacity: 1;
+    }
+}
+
 @keyframes float {
 	0% {
 		transform: translatey(0px);
